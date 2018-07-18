@@ -1,0 +1,47 @@
+{
+  "name": "react-author",
+  "version": "1.0.0",
+  "description": "Output links to Snowball authors",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development parcel ./public/index.html",
+    "build": "rollup -c",
+    "precommit": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snowballdigital/react-author.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snowballdigital/react-author/issues"
+  },
+  "homepage": "https://github.com/snowballdigital/react-author#readme",
+  "dependencies": {
+    "is-callable": "^1.1.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-inline-import-data-uri": "^1.0.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel": "^1.9.7",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "rollup": "^0.63.0",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "^8.4.1",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "styled-components": "^3.3.3"
+  },
+  "peerDependencies": {
+    "styled-components": "=>3.0.0",
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  }
+}

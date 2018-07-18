@@ -1,0 +1,21 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false
+      }
+    ],
+    "react"
+  ],
+  "plugins": [
+    [
+      "inline-import-data-uri",
+      {
+        "extensions": [".jpg"]
+      }
+    ],
+    "transform-object-rest-spread",
+    "transform-class-properties"
+  ]
+}
