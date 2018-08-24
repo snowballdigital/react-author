@@ -70,7 +70,11 @@ export const authors = {
   },
   "filipa@snowball.digital": {
     name: "Filipa Amado",
-    image: filipaImg
+    image: filipaImg,
+    links: {
+      linkedin: "filipa-amado",
+      twitter: "filipa_amado"
+    }
   },
   "marie.weidlich@snowball.digital": {
     name: "Maria Teresa Weidlich",
