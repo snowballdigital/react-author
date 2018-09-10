@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "NODE_ENV=development parcel ./public/index.html",
     "build": "rollup -c",
-    "precommit": "npm run build && git add build/index.js"
+    "precommit": "yarn build && git add build/index.js"
   },
   "repository": {
     "type": "git",

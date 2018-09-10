@@ -15,6 +15,7 @@ import ainaImg from "./team-thumbs/aina.jpg";
 import eduardoImg from "./team-thumbs/eduardo.jpg";
 import filipaImg from "./team-thumbs/filipa.jpg";
 import marieImg from "./team-thumbs/marie.jpg";
+import pawelImg from "./team-thumbs/pawel.jpg";
 
 export const authors = {
   "bard@snowball.digital": {
@@ -82,6 +83,14 @@ export const authors = {
     links: {
       linkedin: "marieweidlich",
       instagram: "londonfashiontoday"
+    }
+  },
+  "pawel@snowball.digital": {
+    name: "Paweł Kawczyński",
+    image: pawelImg,
+    links: {
+      instagram: "kavvvva",
+      linkedin: "pawelkawczynski"
     }
   }
 };
