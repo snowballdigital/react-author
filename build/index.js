@@ -307,9 +307,7 @@
 	    }
 
 	    return _ret = (_temp = (_this = possibleConstructorReturn(this, (_ref = Author.__proto__ || Object.getPrototypeOf(Author)).call.apply(_ref, [this].concat(args))), _this), _this.renderLink = function (type) {
-	      var _this$props = _this.props,
-	          email = _this$props.email,
-	          rest = objectWithoutProperties(_this$props, ["email"]);
+	      var email = _this.props.email;
 
 	      var data = authors[email];
 	      var linkData = data.links[type];
@@ -342,7 +340,9 @@
 	  createClass(Author, [{
 	    key: "render",
 	    value: function render() {
-	      var email = this.props.email;
+	      var _props = this.props,
+	          email = _props.email,
+	          rest = objectWithoutProperties(_props, ["email"]);
 
 	      var data = authors[email];
 

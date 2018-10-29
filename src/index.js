@@ -138,7 +138,7 @@ const Link = styled.a.attrs({
 
 export default class Author extends React.PureComponent {
   renderLink = type => {
-    const { email, ...rest } = this.props;
+    const { email } = this.props;
     const data = authors[email];
     const linkData = data.links[type];
 
@@ -167,7 +167,7 @@ export default class Author extends React.PureComponent {
   };
 
   render() {
-    const { email } = this.props;
+    const { email, ...rest } = this.props;
     const data = authors[email];
 
     if (!data) {
