@@ -138,7 +138,7 @@ const Link = styled.a.attrs({
 
 export default class Author extends React.PureComponent {
   renderLink = type => {
-    const { email } = this.props;
+    const { email, ...rest } = this.props;
     const data = authors[email];
     const linkData = data.links[type];
 
@@ -177,7 +177,7 @@ export default class Author extends React.PureComponent {
     const links = Object.keys(data.links || {});
 
     return (
-      <Outer>
+      <Outer {...rest}>
         {data.image && <Image src={data.image} alt={data.name} />}
         <ObfuscatedLink href={`mailto:${email}`}>{data.name}</ObfuscatedLink>
         {links.length > 0 && <Links>{links.map(this.renderLink)}</Links>}
