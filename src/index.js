@@ -178,9 +178,9 @@ export default class Author extends React.PureComponent {
     }
   }
 
-  render () {
-    const { email } = this.props
-    const data = authors[email]
+  render() {
+    const { email, ...rest } = this.props;
+    const data = authors[email];
 
     if (!data) {
       return null
@@ -189,7 +189,7 @@ export default class Author extends React.PureComponent {
     const links = Object.keys(data.links || {})
 
     return (
-      <Outer>
+      <Outer {...rest}>
         {data.image && <Image src={data.image} alt={data.name} />}
         <ObfuscatedLink href={`mailto:${email}`}>{data.name}</ObfuscatedLink>
         {links.length > 0 && <Links>{links.map(this.renderLink)}</Links>}

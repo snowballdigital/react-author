@@ -359,7 +359,9 @@
 	  createClass(Author, [{
 	    key: 'render',
 	    value: function render() {
-	      var email = this.props.email;
+	      var _props = this.props,
+	          email = _props.email,
+	          rest = objectWithoutProperties(_props, ['email']);
 
 	      var data = authors[email];
 
@@ -371,7 +373,7 @@
 
 	      return React.createElement(
 	        Outer,
-	        null,
+	        rest,
 	        data.image && React.createElement(Image, { src: data.image, alt: data.name }),
 	        React.createElement(
 	          ObfuscatedLink,
