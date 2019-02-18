@@ -18,6 +18,7 @@ import marieImg from './team-thumbs/marie.jpg'
 import pawelImg from './team-thumbs/pawel.jpg'
 import robertImg from './team-thumbs/robert.jpg'
 import michaelImg from './team-thumbs/michael.jpg'
+import meetImg from './team-thumbs/meet.jpg'
 
 export const authors = {
   'bard@snowball.digital': {
@@ -104,6 +105,15 @@ export const authors = {
     name: 'Michael Smesnik',
     image: michaelImg,
     links: {}
+  },
+  'meet@snowball.digital': {
+    name: 'Meet Dave',
+    image: meetImg,
+    links: {
+      medium: '@daveinside',
+      github: 'meetdave3',
+      stackoverflow: '8499698/meet-dave'
+    }
   }
 }
 
@@ -171,6 +181,24 @@ export default class Author extends React.PureComponent {
         return (
           <Link key={type} href={`https://www.instagram.com/${linkData}`}>
             Instagram
+          </Link>
+        )
+      case 'github':
+        return (
+          <Link key={type} href={`https://www.github.com/${linkData}`}>
+            GitHub
+          </Link>
+        )
+      case 'stackoverflow':
+        return (
+          <Link key={type} href={`https://stackoverflow.com/users/${linkData}`}>
+            Stack Overflow
+          </Link>
+        )
+      case 'medium':
+        return (
+          <Link key={type} href={`https://medium.com/${linkData}`}>
+            Medium
           </Link>
         )
       default:
