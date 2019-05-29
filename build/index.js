@@ -306,6 +306,7 @@
 	};
 
 	authors["hakon@crystallize.com"] = authors["hakon@snowball.digital"];
+	authors["bard@crystallize.com"] = authors["bard@snowball.digital"];
 
 	var Outer = styled.div.attrs({
 	  className: "snowball-author"
