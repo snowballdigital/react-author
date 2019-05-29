@@ -1,6 +1,6 @@
 {
   "name": "react-author",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Output links to Snowball authors",
   "main": "build/index.js",
   "scripts": {
