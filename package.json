@@ -31,7 +31,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "husky": "^0.14.3",
-    "parcel": "^1.9.7",
+    "parcel": "^1.12.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "rollup": "^0.63.0",
@@ -41,8 +41,8 @@
     "styled-components": "^3.3.3"
   },
   "peerDependencies": {
-    "styled-components": "=>3.0.0",
     "react": ">=16.0.0",
-    "react-dom": ">=16.0.0"
+    "react-dom": ">=16.0.0",
+    "styled-components": "=>3.0.0"
   }
 }
